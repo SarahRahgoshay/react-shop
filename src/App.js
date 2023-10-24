@@ -3,7 +3,6 @@ import React from 'react';
 import Store from './components/Store';
 //route
 import { Navigate, Route, Routes} from 'react-router-dom';
-import ProductDetails from './components/ProductDetails';
 import Navbar from './components/shared/Navbar';
 import ShopCart from './components/ShopCart';
 //Redux
