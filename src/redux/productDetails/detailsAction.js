@@ -17,7 +17,7 @@ const fetchDetailsSuccess = product => {
 export const fetchDetails = (id) => {
     return (dispatch) => {
         dispatch(fetchDetailsRequest());
-        axios.get(`http://fakestoreapi.com/products/${id}`)
+        axios.get(`https://fakestoreapi.com/products/${id}`)
             .then(response => {
                 const product = response.data;
                 dispatch(fetchDetailsSuccess(product))

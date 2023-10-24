@@ -23,7 +23,7 @@ const fetchProductsFailure = error => {
 export const fetchProducts = () => {
     return (dispatch) => {
         dispatch(fetchProductsRequest());
-        axios.get("http://fakestoreapi.com/products")
+        axios.get("https://fakestoreapi.com/products")
             .then(response => {
                 const products = response.data;
                 dispatch(fetchProductsSuccess(products))
